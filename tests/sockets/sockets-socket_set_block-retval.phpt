@@ -14,11 +14,13 @@ var_dump(socket_set_block($socket));
 
 $socket2 = socket_create_listen(31338);
 socket_close($socket2);
-var_dump(@socket_set_block($socket2));
+var_dump(socket_set_block($socket2));
 
 ?>
---EXPECT--
+--EXPECTF--
 bool(true)
+
+Warning: socket_set_block(): %d is not a valid Socket resource in %s on line %d
 bool(false)
 --CREDITS--
 Robin Mehner, robin@coding-robin.de
