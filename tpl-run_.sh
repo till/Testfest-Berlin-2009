@@ -33,14 +33,14 @@ if [ x$1 != x ]; then
         test=$testdir/$1
     fi
 elif [ -d $testdir ]; then
-    test=$testdir
+    test="$testdir $extdir"
 else
     test=$extdir
 fi
 
 #run
-$TEST_PHP_EXECUTABLE\
- $phpsrc/run-tests.php\
+$TEST_PHP_EXECUTABLE -c $phpsrc/php.ini-production\
+ $phpsrc/run-tests.php -c $phpsrc/php.ini-production\
  $test
 
 #html
