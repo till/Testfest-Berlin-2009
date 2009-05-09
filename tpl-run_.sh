@@ -39,8 +39,8 @@ else
 fi
 
 #run
-$TEST_PHP_EXECUTABLE\
- $phpsrc/run-tests.php\
+$TEST_PHP_EXECUTABLE -c $phpsrc/php.ini-production\
+ $phpsrc/run-tests.php -c $phpsrc/php.ini-production\
  $test
 
 #html
