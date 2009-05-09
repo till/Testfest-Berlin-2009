@@ -13,7 +13,9 @@ if (!extension_loaded('sockets')) {
     if (!socket_set_nonblock($socket)) {
         die('Unable to set nonblocking mode for socket');
     }
+    socket_recvfrom($socket, $buf, 12, 0, $from, $port); // cause warning
     $address = '::1';
+    socket_sendto($socket, '', 1, 0, $address); // cause warning
     if (!socket_bind($socket, $address, 1223)) {
         die("Unable to bind to $address:1223");
     }
@@ -29,6 +31,8 @@ if (!extension_loaded('sockets')) {
 
     $from = "";
     $port = 0;
+    socket_recvfrom($socket, $buf, 12, 0); // cause warning
+    socket_recvfrom($socket, $buf, 12, 0, $from); // cause warning
     $bytes_received = socket_recvfrom($socket, $buf, 12, 0, $from, $port);
     if ($bytes_received == -1) {
         die('An error occured while receiving from the socket');
@@ -38,7 +42,14 @@ if (!extension_loaded('sockets')) {
     echo "Received $buf from remote address $from and remote port $port" . PHP_EOL;
 
     socket_close($socket);
---EXPECT--
+--EXPECTF--
+Warning: socket_recvfrom(): unable to recvfrom [11]: Resource temporarily unavailable in %s on line %d
+
+Warning: Wrong parameter count for socket_sendto() in %s on line %d
+
+Warning: socket_recvfrom() expects at least 5 parameters, 4 given in %s on line %d
+
+Warning: Wrong parameter count for socket_recvfrom() in %s on line %d
 Received Ping! from remote address ::1 and remote port 1223
 --CREDITS--
 Falko Menge <mail at falko-menge dot de>
