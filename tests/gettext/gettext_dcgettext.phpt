@@ -21,6 +21,6 @@ var_dump(dcgettext('dngettextTest', 'item', LC_MESSAGES));
 --EXPECTF--
 string(8) "cProdukt"
 string(7) "Produkt"
---CREDIT--
+--CREDITS--
 Christian Weiske, cweiske@php.net
 PHP Testfest Berlin 2009-05-09

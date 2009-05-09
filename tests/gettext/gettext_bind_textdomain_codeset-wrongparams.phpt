@@ -18,6 +18,6 @@ Warning: bind_textdomain_codeset() expects exactly 2 parameters, 1 given in %s o
 
 Warning: bind_textdomain_codeset() expects exactly 2 parameters, 3 given in %s on line %d
 Done
---CREDIT--
+--CREDITS--
 Florian Holzhauer fh-pt@fholzhauer.de
 PHP Testfest Berlin 2009-05-09
