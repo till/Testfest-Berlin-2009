@@ -7,9 +7,19 @@ if [ ! -d $phpsrc ]; then
     exit 1
 fi
 
-ext=gettext
+ext=`echo $0 | sed 's/.*run_//' | sed 's/\\.sh//'`
+if [ x$ext == x ]; then
+    echo "Copy that script to run_extname.sh"
+    exit 2
+fi
+
 extdir=$phpsrc/ext/$ext
 testdir=tests/$ext
+
+if [ ! -d $extdir ]; then
+    echo "There is no extension named \"$extdir\""
+    exit 3
+fi
 
 #cleanup
 rm covdata-$ext.info
