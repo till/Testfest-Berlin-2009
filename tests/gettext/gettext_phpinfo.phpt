@@ -14,7 +14,9 @@ Test phpinfo() displays gettext support
 phpinfo();
 ?>
 --EXPECTF--
-%aGetText Support%a
+%a
+%rGetText Support.*enabled%r
+%a
 --CREDITS--
 Tim Eggert, tim@elbart.com
 PHP Testfest Berlin 2009-05-09
