@@ -22,9 +22,9 @@ if [ ! -d $extdir ]; then
 fi
 
 #cleanup
-rm covdata-$ext.info
-rm $extdir/$ext.gcda
-rm -r htmlcoverage_$ext
+[ -f covdata-$ext.info ] && rm covdata-$ext.info
+[ -f $extdir/$ext.gcda ] && rm $extdir/$ext.gcda
+[ -d htmlcoverage_$ext ] && rm -r htmlcoverage_$ext
 
 if [ x$1 != x ]; then
     if [ -f $1 ]; then
