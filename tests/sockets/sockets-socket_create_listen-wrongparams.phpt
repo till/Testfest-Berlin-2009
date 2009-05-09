@@ -1,5 +1,9 @@
 --TEST--
 Test if socket_create_listen throws E_WARNING with wrong parameters.
+--SKIP--
+if (!extension_loaded('sockets')) {
+    die('SKIP The sockets extension is not loaded.');
+}
 --FILE--
 <?php
 $sock1 = socket_create_listen(array());

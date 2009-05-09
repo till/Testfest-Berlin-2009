@@ -1,5 +1,9 @@
 --TEST--
 Test if socket binds on 31337
+--SKIP--
+if (!extension_loaded('sockets')) {
+    die('SKIP The sockets extension is not loaded.');
+}
 --FILE--
 <?php
 $sock = socket_create_listen(31337);
