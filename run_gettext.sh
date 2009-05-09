@@ -1,6 +1,7 @@
 #!/bin/sh
 export TEST_PHP_EXECUTABLE=/usr/local/bin/php53
-phpsrc=/home/cweiske/Dev/cvs/php/testfest/php-src
+#phpsrc=/home/cweiske/Dev/cvs/php/testfest/php-src
+phpsrc=php-src
 
 ext=gettext
 extdir=$phpsrc/ext/$ext
