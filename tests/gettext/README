@@ -1,4 +1,10 @@
 
+ ## Build PHP for gettext
+
+ * PHP 5.3-RC2: http://snaps.php.net
+ * ./configure --with-gettext --enable-debug --enable-gcov
+ * make
+
  ## How to generate a .mo file?
 
  * example: test.po
