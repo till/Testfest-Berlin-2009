@@ -14,6 +14,6 @@ var_dump(dcgettext('a', 'b'));
 --EXPECTF--
 Warning: dcgettext() expects exactly 3 parameters, 2 given in %s on line %d
 NULL
---CREDIT--
+--CREDITS--
 Christian Weiske, cweiske@php.net
 PHP Testfest Berlin 2009-05-09

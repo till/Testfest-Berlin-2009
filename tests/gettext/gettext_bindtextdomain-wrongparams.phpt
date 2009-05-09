@@ -18,6 +18,6 @@ bindtextdomain();
 Warning: bindtextdomain() expects exactly 2 parameters, 1 given in %s on line %d
 
 Warning: bindtextdomain() expects exactly 2 parameters, 0 given in %s on line %d
---CREDIT--
+--CREDITS--
 Till Klampaeckel, till@php.net
 PHP Testfest Berlin 2009-05-09

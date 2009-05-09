@@ -15,6 +15,6 @@ setlocale(LC_ALL, 'en_US.UTF-8');
 bindtextdomain('', 'foobar');
 --EXPECTF--
 Warning: The first parameter of bindtextdomain must not be empty in %s on line %d
---CREDIT--
+--CREDITS--
 Till Klampaeckel, till@php.net
 PHP Testfest Berlin 2009-05-09

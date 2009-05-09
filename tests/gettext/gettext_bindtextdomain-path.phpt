@@ -15,6 +15,6 @@ setlocale(LC_ALL, 'en_US.UTF-8');
 var_dump(bindtextdomain('example.org', 'foobar'));
 --EXPECTF--
 bool(false)
---CREDIT--
+--CREDITS--
 Till Klampaeckel, till@php.net
 PHP Testfest Berlin 2009-05-09
