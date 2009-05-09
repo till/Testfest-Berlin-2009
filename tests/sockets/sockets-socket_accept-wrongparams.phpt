@@ -1,8 +1,8 @@
 --TEST--
 Test parameter handling in socket_accept()
 --SKIP--
-if (strtolower(substr(PHP_OS, 0, 3)) == 'win') {
-    die('SKIP Test cannot run on Windows.');
+if (!extension_loaded('sockets')) {
+    die('SKIP The sockets extension is not loaded.');
 }
 --FILE--
 <?php
