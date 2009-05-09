@@ -16,9 +16,6 @@ var_dump(socket_create_pair(AF_INET, null, null, $sockets));
 var_dump(socket_create_pair(31337, null, null, $sockets));
 
 var_dump(socket_create_pair(AF_INET, 31337, 0, $sockets));
---CREDITS--
-Till Klampaeckel, till@php.net
-Berlin TestFest 2009 
 --EXPECTF--
 Warning: socket_create_pair() expects exactly 4 parameters, 3 given in %s on line %d
 NULL
@@ -38,3 +35,6 @@ Warning: socket_create_pair(): invalid socket type [31337] specified for argumen
 
 Warning: socket_create_pair(): unable to create socket pair [95]: Operation not supported in %s on line %d
 bool(false)
+--CREDITS--
+Till Klampaeckel, till@php.net
+Berlin TestFest 2009
