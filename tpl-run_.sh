@@ -32,8 +32,10 @@ if [ x$1 != x ]; then
     else 
         test=$testdir/$1
     fi
-else
+elif [ -d $testdir ]; then
     test=$testdir
+else
+    test=$extdir
 fi
 
 #run
