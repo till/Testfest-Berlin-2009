@@ -15,7 +15,7 @@ rm -r htmlcoverage_$ext
 #run
 $TEST_PHP_EXECUTABLE\
  $phpsrc/run-tests.php\
- $testdir/gettext_basic-enus.phpt
+ $testdir/$1
 
 #html
 lcov --directory $extdir -c -o covdata-$ext.info
