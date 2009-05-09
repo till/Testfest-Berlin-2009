@@ -16,3 +16,6 @@ if (posix_geteuid() == 0) {
 $sock = socket_create_listen(80);
 --EXPECTF--
 Warning: socket_create_listen(): unable to bind to given address [13]: Permission denied in %s on line %d
+--CREDITS--
+Till Klampaeckel, till@php.net
+PHP Testfest Berlin 2009-05-09

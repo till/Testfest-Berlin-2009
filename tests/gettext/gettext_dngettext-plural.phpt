@@ -19,6 +19,6 @@ var_dump(dngettext('dngettextTest', 'item', 'items', 2));
 --EXPECT--
 string(7) "Produkt"
 string(8) "Produkte"
---CREDIT--
+--CREDITS--
 Till Klampaeckel, till@php.net
 PHP Testfest Berlin 2009-05-09

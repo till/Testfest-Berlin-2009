@@ -12,3 +12,6 @@ var_dump($addr, $port);
 --EXPECT--
 string(7) "0.0.0.0"
 int(31337)
+--CREDITS--
+Till Klampaeckel, till@php.net
+PHP Testfest Berlin 2009-05-09

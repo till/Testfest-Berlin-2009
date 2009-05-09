@@ -12,3 +12,6 @@ $sock2 = socket_create_listen(31337, array());
 Warning: socket_create_listen() expects parameter 1 to be long, array given in %s on line %d
 
 Warning: socket_create_listen() expects parameter 2 to be long, array given in %s on line %d
+--CREDITS--
+Till Klampaeckel, till@php.net
+PHP Testfest Berlin 2009-05-09
