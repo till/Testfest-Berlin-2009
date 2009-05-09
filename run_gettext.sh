@@ -16,10 +16,20 @@ rm covdata-$ext.info
 rm $extdir/$ext.gcda
 rm -r htmlcoverage_$ext
 
+if [ x$1 != x ]; then
+    if [ -f $1 ]; then
+        test=$1
+    else 
+        test=$testdir/$1
+    fi
+else
+    test=$testdir
+fi
+
 #run
 $TEST_PHP_EXECUTABLE\
  $phpsrc/run-tests.php\
- $testdir/$1
+ $test
 
 #html
 lcov --directory $extdir -c -o covdata-$ext.info
