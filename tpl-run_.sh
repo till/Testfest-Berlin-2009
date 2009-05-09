@@ -33,7 +33,7 @@ if [ x$1 != x ]; then
         test=$testdir/$1
     fi
 elif [ -d $testdir ]; then
-    test=$testdir
+    test="$testdir $extdir"
 else
     test=$extdir
 fi
