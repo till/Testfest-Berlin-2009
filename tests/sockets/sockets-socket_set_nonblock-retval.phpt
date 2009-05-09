@@ -11,6 +11,7 @@ if (!extension_loaded('sockets')) {
 
 $socket = socket_create_listen(31337);
 var_dump(socket_set_nonblock($socket));
+socket_close($socket);
 
 $socket2 = socket_create_listen(31338);
 socket_close($socket2);
