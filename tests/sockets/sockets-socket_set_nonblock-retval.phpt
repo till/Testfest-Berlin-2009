@@ -1,6 +1,6 @@
 --TEST--
 Test socket_set_nonblock return values
---SKIP--
+--SKIPIF--
 <?php
 if (!extension_loaded('sockets')) {
     die('SKIP The sockets extension is not loaded.');

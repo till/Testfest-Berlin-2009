@@ -1,6 +1,6 @@
 --TEST--
 Test if socket binds on 31337
---SKIP--
+--SKIPIF--
 if (!extension_loaded('sockets')) {
     die('SKIP The sockets extension is not loaded.');
 }

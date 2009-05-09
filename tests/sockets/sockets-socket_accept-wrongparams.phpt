@@ -1,6 +1,6 @@
 --TEST--
 Test parameter handling in socket_accept()
---SKIP--
+--SKIPIF--
 if (!extension_loaded('sockets')) {
     die('SKIP The sockets extension is not loaded.');
 }

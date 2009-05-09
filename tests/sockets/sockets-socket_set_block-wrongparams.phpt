@@ -1,6 +1,6 @@
 --TEST--
 Test if socket_set_block throws E_WARNING with wrong parameters.
---SKIP--
+--SKIPIF--
 <?php
 if (!extension_loaded('sockets')) {
     die('SKIP The sockets extension is not loaded.');
