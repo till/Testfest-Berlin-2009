@@ -1,3 +1,8 @@
 covdata-*
 htmlcoverage*
 php-src
+diff
+*.exp
+*.log
+*.out
+
