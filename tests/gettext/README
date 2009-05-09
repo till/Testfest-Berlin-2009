@@ -1,0 +1,11 @@
+
+ ## How to generate a .mo file?
+
+ * example: test.po
+ * cd locale/en/LC_MESSAGES
+ * msgfmt -o test.mo test.po
+
+ ## Why test English?
+
+ *
+ *
