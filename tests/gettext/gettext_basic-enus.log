@@ -1,0 +1,8 @@
+
+---- EXPECTED OUTPUT
+A basic test
+A basic test
+---- ACTUAL OUTPUT
+Basic test
+Basic test
+---- FAILED
