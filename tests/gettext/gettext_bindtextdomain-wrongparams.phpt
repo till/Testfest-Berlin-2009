@@ -15,9 +15,9 @@ setlocale(LC_ALL, 'en_US.UTF-8');
 bindtextdomain('foobar');
 bindtextdomain();
 --EXPECTF--
-Warning: bindtextdomain() expects exactly 2 parameters, 1 given in %s/gettext_bindtextdomain-wrongparams.php on line %d
+Warning: bindtextdomain() expects exactly 2 parameters, 1 given in %s on line %d
 
-Warning: bindtextdomain() expects exactly 2 parameters, 0 given in %s/gettext_bindtextdomain-wrongparams.php on line %d
+Warning: bindtextdomain() expects exactly 2 parameters, 0 given in %s on line %d
 --CREDIT--
 Till Klampaeckel, till@php.net
 PHP Testfest Berlin 2009-05-09

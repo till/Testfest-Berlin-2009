@@ -16,7 +16,7 @@ bindtextdomain('dngettextTest', './locale');
 
 var_dump(dngettext('dngettextTest', 'item', 'items'));
 --EXPECTF--
-Warning: dngettext() expects exactly 4 parameters, 3 given in %s/gettext_dngettext-wrongparams.php on line %d
+Warning: dngettext() expects exactly 4 parameters, 3 given in %s on line %d
 NULL
 --CREDIT--
 Till Klampaeckel, till@php.net
