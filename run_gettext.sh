@@ -1,7 +1,11 @@
 #!/bin/sh
-#phpsrc=/home/cweiske/Dev/cvs/php/testfest/php-src
 phpsrc=php-src
 export TEST_PHP_EXECUTABLE=$phpsrc/sapi/cli/php
+
+if [ ! -d $phpsrc ]; then
+    echo php-src auf das PHP-Quellverzeichnis linken
+    exit 1
+fi
 
 ext=gettext
 extdir=$phpsrc/ext/$ext
