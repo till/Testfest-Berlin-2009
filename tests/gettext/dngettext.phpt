@@ -2,14 +2,12 @@
 Test if dngettext() returns the correct translations (optionally plural).
 --SKIPIF--
 <?php
-    if (!extension_loaded("gettext")) {
-        die("skip gettext extension is not loaded.\n");
-    }
-    if (!setlocale(LC_ALL, 'en_US.UTF-8')) {
-        die("skip en_US.UTF-8 locale not supported.");
-    }
-?>
-
+if (!extension_loaded("gettext")) {
+    die("skip gettext extension is not loaded.\n");
+}
+if (!setlocale(LC_ALL, 'en_US.UTF-8')) {
+    die("skip en_US.UTF-8 locale not supported.");
+}
 --FILE--
 <?php
 chdir(dirname(__FILE__));
