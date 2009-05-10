@@ -5,7 +5,7 @@ Test posix_getgrgid().
 if (!extension_loaded('posix')) {
     die('SKIP The posix extension is not loaded.');
 }
-if (strtolower(substr(PHP_OS, 0, 3)) == 'win')) {
+if (strtolower(substr(PHP_OS, 0, 3)) == 'win') {
     die('SKIP This test doesn't run on Windows.');
 }
 --FILE--
