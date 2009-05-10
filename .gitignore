@@ -1,8 +1,9 @@
 covdata-*
 htmlcoverage*
 php-src
-diff
+*.diff
 *.exp
 *.log
 *.out
-
+sockets-*.php
+gettext-*.php
