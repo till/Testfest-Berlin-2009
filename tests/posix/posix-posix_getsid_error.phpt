@@ -11,12 +11,11 @@ Source code: ext/posix/posix.c
 <?php
 echo "*** Testing posix_getsid() : error conditions ***\n";
 
-// One argument
 echo "\n-- Testing posix_getsid() function with no argument --\n";
 var_dump( posix_getsid() );
 echo "\n-- Testing posix_getsid() function with invalid type of argument --\n";
 var_dump( posix_getsid(array()) );
-echo "\n-- Testing posix_getsid() function with invalid range --\n";
+echo "\n-- Testing posix_getsid() function with invalid range of argument --\n";
 var_dump( posix_getsid(-1) );
 
 echo "Done";
@@ -34,7 +33,7 @@ bool(false)
 Warning: posix_getsid() expects parameter 1 to be long, array given in %s on line %d
 bool(false)
 
--- Testing posix_getsid() function with invalid range --
+-- Testing posix_getsid() function with invalid range of argument --
 bool(false)
 Done
 --CREDITS--

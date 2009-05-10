@@ -1,5 +1,5 @@
 --TEST--
-Tests for idn_to_ascii results
+Test for Bug 48220 - wrong $errorcode
 --SKIPIF--
 <?php
 if (!function_exists('idn_to_ascii')) {
@@ -8,17 +8,14 @@ if (!function_exists('idn_to_ascii')) {
 ?>
 --FILE--
 <?php
-$result = 0;
-var_dump(idn_to_ascii('',$result));
+idn_to_ascii("xn--".chr(0xC3).chr(0xA4),$result);
 var_dump($result);
-var_dump(idn_to_ascii("domain".chr(0xC3).chr(0xA4),$result));
+idn_to_utf8("xn--".chr(0xC3).chr(0xA4),$result);
 var_dump($result);
 ?>
 --CREDITS--
 Florian Holzhauer fh-pt@fholzhauer.de
 PHP Testfest Berlin 2009-05-10
 --EXPECTF--
-bool(false)
-int(0)
-string(14) "xn--domain-gua"
-int(0)
+int(8)
+int(8)
