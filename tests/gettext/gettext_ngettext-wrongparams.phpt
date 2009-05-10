@@ -3,10 +3,10 @@ Check how ngettext() with wrong parameters behaves.
 --SKIPIF--
 <?php 
 	if (!extension_loaded("gettext")) {
-		die("extension gettext not loaded\n");
+		die("SKIP extension gettext not loaded\n");
 	}
 	if (!setlocale(LC_ALL, 'en_US.UTF-8')) {
-		die("skip en_US.UTF-8 locale not supported.");
+		die("SKIP en_US.UTF-8 locale not supported.");
 	}
 ?>
 --FILE--

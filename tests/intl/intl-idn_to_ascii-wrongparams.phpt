@@ -2,8 +2,8 @@
 Test if idn_to_ascii throws E_WARNING if wrong params are supplied.
 --SKIPIF--
 <?php
-if (!function_exists('idn_to_ascii')) {
-    die('SKIP The function idn_to_ascii does not exist.');
+if (!extension_loaded( 'intl' )) {
+    die('SKIP The intl extenstion does not exist.');
 }
 ?>
 --FILE--

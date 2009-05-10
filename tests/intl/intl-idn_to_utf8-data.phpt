@@ -2,8 +2,8 @@
 Tests for idn_to_utf8 results
 --SKIPIF--
 <?php
-if (!function_exists('idn_to_utf8')) {
-    die('SKIP The function idn_to_utf8 does not exist.');
+if (!extension_loaded( 'intl' )) {
+    die('SKIP The intl extenstion does not exist.');
 }
 ?>
 --FILE--
