@@ -6,7 +6,7 @@ Source code: ext/posix/posix.c
 --SKIPIF--
 <?php 
 	if (!extension_loaded('posix')) { 
-        die('SKIP - POSIX extension not available';
+        die('SKIP - POSIX extension not available');
     }
     // needed because of #ifdef HAVE_CTERMID in posix.c
     if (!function_exists('posix_ctermid')) { 

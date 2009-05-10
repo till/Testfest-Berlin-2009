@@ -1,7 +1,7 @@
 --TEST--
-Test posix_uname()
+Test posix_ttyname()
 --DESCRIPTION--
-Gets information about the system.
+Gets the absolute path to the current terminal device that is open on a given file descriptor.
 Source code: ext/posix/posix.c
 --SKIPIF--
 <?php 
@@ -11,21 +11,14 @@ Source code: ext/posix/posix.c
 ?>
 --FILE--
 <?php
-    var_dump(posix_uname());
+    var_dump(posix_ttyname(STDIN));
+    var_dump(posix_ttyname(STDERR));
+    var_dump(posix_ttyname(STDOUT));
 ?>
 --EXPECTF--
-array(5) {
-  ["sysname"]=>
-  string(%d) "%s"
-  ["nodename"]=>
-  string(%d) "%s"
-  ["release"]=>
-  string(%d) "%s"
-  ["version"]=>
-  string(%d) "%s"
-  ["machine"]=>
-  string(%d) "%s"
-}
+bool(false)
+bool(false)
+bool(false)
 --CREDITS--
 Falko Menge, mail at falko-menge dot de
 PHP Testfest Berlin 2009-05-10
