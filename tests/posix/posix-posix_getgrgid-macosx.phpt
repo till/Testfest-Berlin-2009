@@ -5,8 +5,8 @@ Test return values of posix_getgrgid() on MacOSX.
 if (!extension_loaded('posix')) {
     die('SKIP The posix extension is not loaded.');
 }
-if (strtolower(substr(PHP_OS, 0, 6)) != 'darwin') {
-    die('SKIP This test only runs on MacOSX/Darwin.');
+if (strtolower(PHP_OS) != 'darwin') {
+    die('SKIP This test requires MacOSX/Darwin.');
 }
 --FILE--
 <?php
