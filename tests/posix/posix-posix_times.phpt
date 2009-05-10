@@ -14,7 +14,7 @@ var_dump(posix_times());
 --EXPECTF--
 array(5) {
   ["ticks"]=>
-  int(%d)
+  int(%i)
   ["utime"]=>
   int(%d)
   ["stime"]=>
