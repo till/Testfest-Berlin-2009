@@ -6,9 +6,9 @@ if (!extension_loaded('posix')) {
     die('SKIP The posix extension is not loaded.');
 }
 if (strtolower(substr(PHP_OS, 0, 3)) == 'win') {
-    die('SKIP This test doesn't run on Windows.');
+    die('SKIP This test doesn\'t run on Windows.');
 }
-if (strtolower(substr(PHP_OS, 0, 6)) == 'darwin') {
+if (strtolower(PHP_OS) == 'darwin') {
     die('SKIP This test doesn\'t run on MacOSX/Darwin.');
 }
 --FILE--
