@@ -30,7 +30,7 @@ socket_close($socket);
 ?>
 
 --EXPECTF--
-Warning: socket_set_option(): no key "sec" passed in optval in %s/sockets-socket_set_option_sndtimeo.php on line %d
+Warning: socket_set_option(): no key "sec" passed in optval in %s
 bool(true)
 bool(true)
 --CREDITS--
