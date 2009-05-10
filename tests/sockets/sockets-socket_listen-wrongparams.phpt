@@ -16,5 +16,5 @@ Berlin TestFest 2009
 Warning: socket_listen() expects parameter 1 to be resource, null given in %s on line %d
 NULL
 
-Warning: socket_listen(): unable to listen on socket [22]: Invalid argument in %s on line %d
+Warning: socket_listen(): unable to listen on socket [%d]: Invalid argument in %s on line %d
 bool(false)
