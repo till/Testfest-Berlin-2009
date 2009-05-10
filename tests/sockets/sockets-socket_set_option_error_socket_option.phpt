@@ -17,7 +17,7 @@ socket_set_option( $socket, SOL_SOCKET, 1, 1);
 socket_close($socket);
 ?>
 --EXPECTF--
-Warning: socket_set_option(): unable to set socket option %s/sockets-socket_set_option_error_socket_option.php on line %d
+Warning: socket_set_option(): unable to set socket option %s on line %d
 --CREDITS--
 Moritz Neuhaeuser, info@xcompile.net
 PHP Testfest Berlin 2009-05-10

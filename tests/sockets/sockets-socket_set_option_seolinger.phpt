@@ -35,9 +35,9 @@ socket_close($socket);
 ?>
 
 --EXPECTF--
-Warning: socket_set_option(): no key "l_onoff" passed in optval in %s/sockets-socket_set_option_seolinger.php on line %d
+Warning: socket_set_option(): no key "l_onoff" passed in optval in %s on line %d
 
-Warning: socket_set_option(): no key "l_linger" passed in optval in %s/sockets-socket_set_option_seolinger.php on line %d
+Warning: socket_set_option(): no key "l_linger" passed in optval in %s on line %d
 bool(false)
 bool(true)
 bool(true)
