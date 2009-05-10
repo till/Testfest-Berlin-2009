@@ -7,3 +7,4 @@ php-src
 *.out
 sockets-*.php
 gettext-*.php
+testfest-svn
