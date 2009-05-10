@@ -6,14 +6,14 @@ Test if socket_set_option() works, option:SO_RCVTIMEO
 --SKIPIF--
 <?php
 if (!extension_loaded('sockets')) {
-        die('skip sockets extension not available.');
+        die('SKIP sockets extension not available.');
 }
 ?>
 --FILE--
 <?php
 $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 if (!$socket) {
-        die('skip Unable to create AF_INET socket [socket]');
+        die('Unable to create AF_INET socket [socket]');
 }
 socket_set_block($socket);
 
