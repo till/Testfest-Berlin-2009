@@ -27,7 +27,7 @@ fi
 [ -d htmlcoverage_$ext ] && rm -r htmlcoverage_$ext
 
 if [ x$1 != x ]; then
-    if [ -f $1 ]; then
+    if [ -f $1 ] || [ -d $1 ]; then
         test=$1
     else 
         test=$testdir/$1
