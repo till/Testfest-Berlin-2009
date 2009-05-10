@@ -7,9 +7,6 @@ cases: no params, wrong param1, wrong param2, null directory, wrong directory,
 if (!extension_loaded('posix')) {
     die('SKIP The posix extension is not loaded.');
 }
-if (strtolower(substr(PHP_OS, 0, 3)) == 'win')) {
-    die('SKIP This test doesn\'t run on Windows.');
-}
 if (version_compare(PHP_VERSION, '6.0.0') === 1) {
     die('SKIP safe_mode is deprecated in 6.0.0.');
 }
