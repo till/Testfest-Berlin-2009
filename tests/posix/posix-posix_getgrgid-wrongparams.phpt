@@ -9,7 +9,7 @@ if (strtolower(substr(PHP_OS, 0, 3)) == 'win') {
     die('SKIP This test doesn't run on Windows.');
 }
 if (strtolower(substr(PHP_OS, 0, 6)) == 'darwin') {
-    die('SKIP This test doesn't run on MacOSX/Darwin.');
+    die('SKIP This test doesn\'t run on MacOSX/Darwin.');
 }
 --FILE--
 <?php
