@@ -1,0 +1,17 @@
+
+ ## Build PHP for gettext
+
+ * PHP 5.3-RC2: http://snaps.php.net
+ * ./configure --with-gettext --enable-intl --enable-soap --enable-sockets --with-xsl --enable-debug --enable-gcov
+ * make
+
+ ## How to generate a .mo file?
+
+ * example: test.po
+ * cd locale/en/LC_MESSAGES
+ * msgfmt -o test.mo test.po
+
+ ## Why test English?
+
+ * KGV between all installs
+ * always available
