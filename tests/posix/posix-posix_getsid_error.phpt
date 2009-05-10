@@ -4,7 +4,9 @@ Test posix_getsid() function : error conditions
 cases: no params, wrong param, wrong param range
 --SKIPIF--
 <?php 
-	if(!extension_loaded("posix")) print "SKIP - POSIX extension not loaded"; 
+	if(!extension_loaded("posix")) {
+        die("SKIP - POSIX extension not loaded"); 
+    }
 ?>
 --FILE--
 <?php
