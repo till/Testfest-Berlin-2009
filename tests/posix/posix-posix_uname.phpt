@@ -6,12 +6,12 @@ Source code: ext/posix/posix.c
 --SKIPIF--
 <?php 
 	if (!extension_loaded('posix')) { 
-        die('SKIP - POSIX extension not available';
+        die('SKIP - POSIX extension not available');
     }
 ?>
 --FILE--
 <?php
-var_dump(posix_uname());
+    var_dump(posix_uname());
 ?>
 --EXPECTF--
 array(5) {
