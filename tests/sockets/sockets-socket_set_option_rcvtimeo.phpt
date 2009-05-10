@@ -1,6 +1,7 @@
 --TEST--
-Test socket_set_option() option:SO_RCVTIMEO
--wrong params
+Test if socket_set_option() works, option:SO_RCVTIMEO
+--DESCRIPTION---
+-wrong params 
 -set/get params comparison 
 --SKIPIF--
 <?php

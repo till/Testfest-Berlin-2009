@@ -1,6 +1,7 @@
 --TEST--
-Test socket_set_option() option:SO_SNDTIMEO
--wrong params
+Test if socket_set_option() works, option:SO_SNDTIMEO
+--DESCRIPTION---
+-wrong params 
 -set/get params comparison 
 --SKIPIF--
 <?php
