@@ -5,7 +5,9 @@ Gets information about the system.
 Source code: ext/posix/posix.c
 --SKIPIF--
 <?php 
-	if(!extension_loaded("posix")) print "SKIP - POSIX extension not loaded"; 
+	if (!extension_loaded('posix')) { 
+        die('SKIP - POSIX extension not available';
+    }
 ?>
 --FILE--
 <?php

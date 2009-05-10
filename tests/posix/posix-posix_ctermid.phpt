@@ -10,12 +10,12 @@ Source code: ext/posix/posix.c
     }
     // needed because of #ifdef HAVE_CTERMID in posix.c
     if (!function_exists('posix_ctermid')) { 
-        die('SKIP - fuction posix_ctermid() not available');
+        die('SKIP - Fuction posix_ctermid() not available');
     }
 ?>
 --FILE--
 <?php
-var_dump(posix_ctermid());
+    var_dump(posix_ctermid());
 ?>
 --EXPECTF--
 string(%d) "%s"
